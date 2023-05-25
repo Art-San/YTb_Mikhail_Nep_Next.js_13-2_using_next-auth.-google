@@ -1,5 +1,5 @@
 import { Navigation } from './Navigation'
-
+// активный пункт меню
 const navItems = [
   { label: 'Home', href: '/' },
   { label: 'Blog', href: '/blog' },

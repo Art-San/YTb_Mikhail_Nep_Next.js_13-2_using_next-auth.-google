@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+// активный пункт меню
+
 type NavLink = {
   label: string
   href: string
