@@ -3,7 +3,7 @@
 }
 
 :root {
-  --color-bg: #2C2C32;
+  --color-bg: #2c2c32;
   --color-active: #0f7dc6;
 }
 
@@ -66,13 +66,30 @@ form {
   justify-content: center;
 }
 
-form button {
+form button,
+button {
   background-color: var(--color-active);
   cursor: pointer;
   color: white;
   border: none;
 }
 
-input[type="search"] {
+input[type='search'] {
   padding: 0.5rem 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 1rem;
 }
