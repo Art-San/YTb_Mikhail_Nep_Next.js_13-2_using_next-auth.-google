@@ -13,7 +13,7 @@ const SigninForm = () => {
     const res = await signIn('credentials', {
       email: formaData.get('email'),
       password: formaData.get('password'),
-      redirect: false
+      redirect: false // отключает редирект при ошибке в форме
     })
 
     if (res && !res.error) {
