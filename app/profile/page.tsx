@@ -5,7 +5,7 @@ import { getServerSession } from 'next-auth'
 
 export default async function Profile() {
   const session = await getServerSession(authConfig) // getServerSession вызвали хелпер, он работает толко на сервере
-  console.log('session', session?.user)
+  console.log('Profile session', session?.user)
   return (
     <div className="">
       <h1>Profile of {session?.user?.name}</h1>
